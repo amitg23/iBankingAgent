@@ -1,0 +1,246 @@
+{
+  "name": "create_consumer",
+  "goal": "Create customer and view it",
+  "target": {
+    "surface": "desktop",
+    "entry_point": "iBanking desktop application"
+  },
+  "parameters": [
+    {
+      "name": "recorded_inputs",
+      "type": "object",
+      "description": "Values to substitute into typed steps",
+      "required": true,
+      "sensitive": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "screen_state",
+      "type": "evidence",
+      "description": "Screenshots captured during replay"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step_001",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3360.30078125,
+        "y": -271.47265625,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_002",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_003",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3350.6953125,
+        "y": -234.86328125,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_004",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_005",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3382.20703125,
+        "y": -199.01953125,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_006",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_007",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3370.50390625,
+        "y": -164.421875,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_008",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_009",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3402.83203125,
+        "y": -132.4296875,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_010",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_011",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3398.7421875,
+        "y": -101.93359375,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_012",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_013",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3652.484375,
+        "y": -48.71484375,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_014",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -2845.5546875,
+        "y": -260.5,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_015",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -1287.29296875,
+        "y": -67.95703125,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    }
+  ],
+  "checkpoint": {
+    "type": "manual",
+    "description": "Operator-defined final screen checkpoint"
+  },
+  "version": "1.0.0",
+  "artifact_type": "desktop.computer_use_capability",
+  "created_at": "2026-09-17T17:13:50.552701+00:00",
+  "policy": {
+    "allowed_actions": [
+      "click",
+      "key",
+      "type",
+      "wait",
+      "screenshot"
+    ],
+    "blocked_actions": [
+      "hotkey",
+      "shell",
+      "clipboard_read"
+    ],
+    "require_confirmation_for": [
+      "submit",
+      "deposit",
+      "delete",
+      "transfer"
+    ],
+    "redact_sensitive_values": true
+  }
+}

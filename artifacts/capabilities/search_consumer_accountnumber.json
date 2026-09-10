@@ -1,0 +1,177 @@
+{
+  "name": "search_consumer_accountnumber",
+  "goal": "Create customer and view it",
+  "target": {
+    "surface": "desktop",
+    "entry_point": "iBanking desktop application"
+  },
+  "parameters": [
+    {
+      "name": "recorded_inputs",
+      "type": "object",
+      "description": "Values to substitute into typed steps",
+      "required": true,
+      "sensitive": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "screen_state",
+      "type": "evidence",
+      "description": "Screenshots captured during replay"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step_001",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -2795.83984375,
+        "y": -472.17578125,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_002",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -2795.83984375,
+        "y": -472.17578125,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_003",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3521.98046875,
+        "y": -324.609375,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_004",
+      "action": "type",
+      "target": {
+        "strategy": "focused_control"
+      },
+      "value": "{{input:recorded_inputs}}",
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_005",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3579.53125,
+        "y": -290.07421875,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_006",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -3260.359375,
+        "y": -116.5390625,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_007",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -2591.85546875,
+        "y": -133.6640625,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_008",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -2591.85546875,
+        "y": -133.6640625,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    },
+    {
+      "id": "step_009",
+      "action": "click",
+      "target": {
+        "strategy": "screen_coordinate",
+        "x": -1487.37890625,
+        "y": -171.59765625,
+        "button": "Button.left"
+      },
+      "value": null,
+      "rationale": "Recorded from operator action",
+      "risk": "safe",
+      "checkpoint": null
+    }
+  ],
+  "checkpoint": {
+    "type": "manual",
+    "description": "Operator-defined final screen checkpoint"
+  },
+  "version": "1.0.0",
+  "artifact_type": "desktop.computer_use_capability",
+  "created_at": "2026-09-17T16:03:15.681805+00:00",
+  "policy": {
+    "allowed_actions": [
+      "click",
+      "key",
+      "type",
+      "wait",
+      "screenshot"
+    ],
+    "blocked_actions": [
+      "hotkey",
+      "shell",
+      "clipboard_read"
+    ],
+    "require_confirmation_for": [
+      "submit",
+      "deposit",
+      "delete",
+      "transfer"
+    ],
+    "redact_sensitive_values": true
+  }
+}

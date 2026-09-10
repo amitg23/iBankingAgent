@@ -1,0 +1,4 @@
+pynput>=1.7.7
+PyAutoGUI>=0.9.54
+pytest>=8.0
+pytesseract>=0.3.13

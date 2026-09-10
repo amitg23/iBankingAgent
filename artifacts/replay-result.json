@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "capability": "create_consumer",
+  "completed_steps": 15,
+  "outputs": {
+    "checkpoint": {
+      "type": "manual",
+      "description": "Operator-defined final screen checkpoint"
+    },
+    "popup_message": "4\n\nDate of birth must be in MM/DD/\nYYYY format."
+  },
+  "error": null,
+  "evidence": []
+}
